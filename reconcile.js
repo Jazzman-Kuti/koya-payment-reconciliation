@@ -46,7 +46,7 @@ for (const line of lines) {
 
       status: event.status,
 
-      amount: Number(event.amount),
+      amount: Number(String(event.amount).replace(/,/g,"")),
 
       timestamp
 
